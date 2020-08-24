@@ -22,7 +22,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder
         }
 
         private void bind (@NonNull Note note){
-            noteTextView.setText(note.header);
+            noteTextView.setText(note.date.toString());
         }
     }
 
@@ -48,4 +48,16 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder
     public int getItemCount(){
         return mNotes.size();
     }
+
+    public void clearNotes(){
+        mNotes.clear();
+        notifyDataSetChanged();
+    }
+
+    public void addNote(Note note){
+        mNotes.add(note);
+        notifyDataSetChanged();
+    }
+
+
 }

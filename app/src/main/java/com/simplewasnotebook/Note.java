@@ -18,4 +18,6 @@ public class Note {
     public int getCount(){
         return noteCount;
     }
+
+
 }
