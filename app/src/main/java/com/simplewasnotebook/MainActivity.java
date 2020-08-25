@@ -1,5 +1,6 @@
 package com.simplewasnotebook;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -35,10 +36,13 @@ public class MainActivity extends AppCompatActivity {
         newNoteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = EditorActivity.newIntent(MainActivity.this);
+                startActivity(intent);
+                /*
                 Date cdate = new Date();
                 String test = "test";
                 Note newNote = new Note(test, cdate);
-                noteAdapter.addNote(newNote);
+                noteAdapter.addNote(newNote);*/
             }
         });
 

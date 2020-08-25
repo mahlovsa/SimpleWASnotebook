@@ -3,22 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="100dp"
+    android:background="#2C2A2A"
     android:visibility="visible">
 
     <TextView
         android:id="@+id/note_item"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="#2C2A2A"
-        android:textAlignment="center"
-        android:textColor="#FAFAFA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/note_date"
+        android:textColor="#686464"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:visibility="visible">
+        app:layout_constraintEnd_toEndOf="parent">
+    </TextView>
 
+    <TextView
+        android:id="@+id/note_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/note_content"
+        android:textColor="#EDE9E9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     </TextView>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

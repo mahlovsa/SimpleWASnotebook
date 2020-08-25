@@ -12,4 +12,6 @@
     <string name="note_preview">note_preview</string>
     <string name="newnote_button_text">NEW</string>
     <string name="clearnotes_button_text">CLEAR</string>
+    <string name="note_date">WWW MMM DD HH:MM:SS GMT+HH:MM YYYY</string>
+    <string name="note_content">Jackdaws love my big sphinx of quartz.</string>
 </resources>
